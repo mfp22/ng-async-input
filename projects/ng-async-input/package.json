@@ -1,6 +1,6 @@
 {
   "name": "ng-async-input",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Decorator to get observable of Angular component input changes.",
   "keywords": [
     "Angular",
@@ -12,7 +12,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/mfp22/ng-async-input"
   },
   "homepage": "https://medium.com/@m3po22",
   "peerDependencies": {

@@ -10,7 +10,8 @@
     "e2e": "ng e2e",
     "build:ng-async-input": "ng build ng-async-input",
     "npm-pack:ng-async-input": "cd dist/ng-async-input && npm pack",
-    "package:ng-async-input": "npm run build:ng-async-input && npm run npm-pack:ng-async-input"
+    "copy-files:ng-async-input": "cp README.md dist/ng-async-input/ && cp LICENSE dist/ng-async-input/",
+    "package:ng-async-input": "npm run build:ng-async-input && npm run npm-pack:ng-async-input && npm run copy-files:ng-async-input"
   },
   "private": true,
   "dependencies": {
