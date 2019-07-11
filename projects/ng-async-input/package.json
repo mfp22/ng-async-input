@@ -12,7 +12,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mfp22/ng-async-input"
+    "url": "https://github.com/mfp22/ng-async-input/tree/master/projects/ng-async-input"
   },
   "homepage": "https://medium.com/@m3po22",
   "peerDependencies": {
