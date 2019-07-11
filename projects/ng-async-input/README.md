@@ -1,24 +1,27 @@
-# NgAsyncInput
+# Installation
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
+```
+npm install ng-async-input --save
+```
 
-## Code scaffolding
+# Usage
 
-Run `ng generate component component-name --project ng-async-input` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ng-async-input`.
-> Note: Don't forget to add `--project ng-async-input` or else it will be added to the default project in your `angular.json` file. 
+```
+import { Component, Input } from '@angular/core';
+import { AsyncInput } from 'ng-async-input';
+import { BehaviorSubject } from 'rxjs';
 
-## Build
+@Component({
+  selector: 'app-hello',
+  templateUrl: './hello.component.html',
+  styleUrls: ['./hello.component.css']
+})
+export class HelloComponent implements OnChanges {
+  @Input() name: string;
+  @AsyncInput() name$ = new BehaviorSubject('Default Name');
 
-Run `ng build ng-async-input` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Publishing
-
-After building your library with `ng build ng-async-input`, go to the dist folder `cd dist/ng-async-input` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test ng-async-input` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+  constructor() {
+    this.name$.subscribe(name => console.log('from async input', name));
+  }
+}
+```
