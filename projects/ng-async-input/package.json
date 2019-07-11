@@ -1,0 +1,22 @@
+{
+  "name": "ng-async-input",
+  "version": "0.0.1",
+  "description": "Decorator to get observable of Angular component input changes.",
+  "keywords": [
+    "Angular",
+    "RxJS",
+    "Observable",
+    "Component",
+    "Input"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "homepage": "https://medium.com/@m3po22",
+  "peerDependencies": {
+    "@angular/common": "^8.0.3",
+    "@angular/core": "^8.0.3"
+  }
+}
