@@ -16,7 +16,7 @@ import { BehaviorSubject } from 'rxjs';
   templateUrl: './hello.component.html',
   styleUrls: ['./hello.component.css']
 })
-export class HelloComponent implements OnChanges {
+export class HelloComponent {
   @Input() name: string;
   @AsyncInput() name$ = new BehaviorSubject('Default Name');
 
